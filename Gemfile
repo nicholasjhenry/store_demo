@@ -14,6 +14,7 @@ gem 'newrelic_rpm'
 gem 'will_paginate'
 gem 'ruby-progressbar'
 gem 'puma'
+gem 'rack-mini-profiler'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
