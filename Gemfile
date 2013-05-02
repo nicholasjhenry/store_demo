@@ -15,6 +15,7 @@ gem 'will_paginate'
 gem 'ruby-progressbar'
 gem 'puma'
 gem 'rack-mini-profiler'
+gem 'cache_digests'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
