@@ -7,7 +7,7 @@ class StoreConfig
     "http://shrouded-fortress-5742.herokuapp.com/"
   end
 
-  def self.email_addres
+  def self.email_address
     "nicholas.henry@gmail.com"
   end
 end
