@@ -9,9 +9,12 @@
           <li><a href="/">Show All</a></li>
           <% unless @categories.nil? %>
               <% @categories.each do |category| %>
-                  <li>
-                    <%=link_to "#{category.title} (#{category.products.length})", products_path(category_id: category.id) %>
-                  </li>
+                  <%- cache @category do %>
+                    <li>
+                      <%= link_to "#{category.title} (#{category.products.length})",
+                                  products_path(category_id: category.id) %>
+                    </li>
+                  <%- end %>
               <% end %>
           <% end %>
         </ul>
